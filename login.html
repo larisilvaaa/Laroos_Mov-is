@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Larissa e Sara">
+    <title>Login | Laroos Móveis</title>
+    <link rel="stylesheet" href="style-login.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script>
+        function validarLogin(event) {
+            event.preventDefault(); // Evita o recarregamento da página
+            
+            const usuarioCorreto = "admin@laroos.com";
+            const senhaCorreta = "12345";
+
+            const emailField = document.getElementById("email");
+            const senhaField = document.getElementById("senha");
+
+            const email = emailField.value;
+            const senha = senhaField.value;
+
+            if (email === usuarioCorreto && senha === senhaCorreta) {
+                alert("Login realizado com sucesso!");
+            } else {
+                alert("E-mail ou senha incorretos. Tente novamente.");
+            }
+
+            // Limpa os campos após o envio
+            emailField.value = "";
+            senhaField.value = "";
+        }
+    </script>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="header-inner-content">
+            <h1 class="logo">LAROOS<span>MOVÉIS</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="sobre-nos.html">Sobre nós</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <main>
+        <section class="page-inner-content">
+            <h2>Login</h2>
+            <form onsubmit="validarLogin(event)" class="login-form">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+
+                <button type="submit">Entrar</button>
+            </form>
+            <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se aqui.</a></p>
+        </section>
+    </main>
+
+    <footer class="gray-background">
+        <div class="logo-footer">
+            <h1 class="logo">LAROOS<span>MOVÉIS</span></h1>
+            <p>Móveis que combinam conforto, estilo e qualidade!</p>
+        </div>
+        <hr class="page-inner-content" />
+        <div class="page-inner-content copyright">
+            <p>2010 - 2025, Laroos Moveis. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
