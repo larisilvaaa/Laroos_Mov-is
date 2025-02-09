@@ -1,26 +1,30 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-br"> <!-- Define a linguagem principal como português do Brasil -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Larissa e Sara">
-    <title>Login | Laroos Móveis</title>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres para UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade para dispositivos móveis -->
+    <meta name="author" content="Larissa e Sara"> <!-- Informações sobre os autores da página -->
+    <title>Login | Laroos Móveis</title> <!-- Título da página que aparece na aba do navegador -->
+    
+    <!-- Estilos CSS -->
     <link rel="stylesheet" href="style-login.css" />
     <link rel="stylesheet" href="style.css" />
+
     <script>
+        // Função para validar o login
         function validarLogin(event) {
             event.preventDefault(); // Evita o recarregamento da página
             
-            const usuarioCorreto = "admin@laroos.com";
-            const senhaCorreta = "12345";
+            const usuarioCorreto = "admin@laroos.com"; // Usuário correto
+            const senhaCorreta = "12345"; // Senha correta
 
-            const emailField = document.getElementById("email");
-            const senhaField = document.getElementById("senha");
+            const emailField = document.getElementById("email"); // Campo de email
+            const senhaField = document.getElementById("senha"); // Campo de senha
 
             const email = emailField.value;
             const senha = senhaField.value;
 
+            // Verificação dos dados de login
             if (email === usuarioCorreto && senha === senhaCorreta) {
                 alert("Login realizado com sucesso!");
             } else {
@@ -35,11 +39,12 @@
 </head>
 
 <body>
+    <!-- Barra de navegação -->
     <div class="navbar">
         <div class="header-inner-content">
-            <h1 class="logo">LAROOS<span>MOVÉIS</span></h1>
+            <h1 class="logo">LAROOS<span>MOVÉIS</span></h1> <!-- Logo da loja -->
             <nav>
-                <ul>
+                <ul> <!-- Links de navegação -->
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="sobre-nos.html">Sobre nós</a></li>
                     <li><a href="produtos.html">Produtos</a></li>
@@ -50,22 +55,26 @@
         </div>
     </div>
 
+    <!-- Conteúdo principal -->
     <main>
         <section class="page-inner-content">
             <h2>Login</h2>
+            <!-- Formulário de login com validação -->
             <form onsubmit="validarLogin(event)" class="login-form">
                 <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" required> <!-- Campo obrigatório de email -->
 
                 <label for="senha">Senha:</label>
-                <input type="password" id="senha" name="senha" required>
+                <input type="password" id="senha" name="senha" required> <!-- Campo obrigatório de senha -->
 
-                <button type="submit">Entrar</button>
-            </form>
-            <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se aqui.</a></p>
+                <button type="submit">Entrar</button> <!-- Botão de envio -->
+            </form> 
+            <br>
+            <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se aqui.</a></p> <!-- Link para cadastro -->
         </section>
     </main>
 
+    <!-- Rodapé -->
     <footer class="gray-background">
         <div class="logo-footer">
             <h1 class="logo">LAROOS<span>MOVÉIS</span></h1>
@@ -73,7 +82,7 @@
         </div>
         <hr class="page-inner-content" />
         <div class="page-inner-content copyright">
-            <p>2010 - 2025, Laroos Moveis. Todos os direitos reservados.</p>
+            <p>2010 - 2025, Laroos Moveis. Todos os direitos reservados.</p> <!-- Aviso de direitos autorais -->
         </div>
     </footer>
 </body>

@@ -1,2 +1,55 @@
 Projeto: Site para vendas de movéis
 Equipe: Larissa Vieira e Sara Borges.
+
+Nome da empresa: Laroos Movéis
+
+Descrição
+
+Este projeto consiste em um site responsivo para a empresa fictícia Laroos Móveis, que oferece uma vasta gama de móveis 
+elegantes e confortáveis. O site apresenta seções informativas sobre produtos, contato, login de usuário e depoimentos de 
+clientes satisfeitos.
+
+Estrutura do Projeto:
+
+Arquivos e Pastas Principais
+- index.html: Página principal do site.
+- style.css: Arquivo de estilização do site.
+- sobre-nos.html: Página com informações sobre a empresa.
+- produtos.html: Listagem dos produtos oferecidos.
+- contato.html: Formulário para contato.
+- login.html: Tela de login para usuários.
+- img: Pasta contendo as imagens dos produtos e elementos visuais.
+
+Funcionalidades Implementadas
+- Navbar Dinâmica: Navegação simples com opções para diferentes seções.
+- Carrossel de Imagens: Exibição de produtos populares.
+- Seções Personalizadas: Produtos organizados por categorias (Mais Vendidos, Cozinha, Quarto).
+- Depoimentos de Clientes: Seção com opiniões de clientes.
+- Funções de Login e Destaque: Com mensagens de feedback ao usuário.
+
+Comentários do Código:
+
+Cabeçalho HTML: O documento é definido como HTML5 com configuração de idioma para português do Brasil, além de metadados 
+para responsividade e autoria.
+
+Estrutura do Site: O site apresenta uma barra de navegação com links para as principais páginas, seguido de um cabeçalho 
+com informações sobre a missão da empresa.
+
+Seções de Produtos: Os produtos estão organizados por categorias, cada um com imagem, nome e preço exibidos de forma 
+elegante e responsiva.
+
+Depoimentos de Clientes: Uma seção destaca avaliações e opiniões positivas de clientes satisfeitos.
+
+Rodapé: O rodapé contém informações de contato e direitos autorais.
+
+Como Usar
+
+Abra o arquivo index.html em qualquer navegador web. 
+Navegue pelas seções utilizando a barra de navegação.
+Clique em “Login” para simular a função de login.
+Explore os produtos e leia os depoimentos dos clientes.
+
+Tecnologias Utilizadas: HTML, CSS, JavaScript.
+
+
+
