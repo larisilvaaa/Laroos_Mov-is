@@ -69,6 +69,12 @@ nav ul {
   margin-right: 1rem;
 }
 
+ul li a {
+  text-decoration: none; /* Remove o sublinhado */
+  color: white; /* Deixa o texto branco */
+}
+
+
 /* Estilo dos itens de lista de navegação */
 nav ul li {
   color: #ffff85; /* Cor do texto dos itens */
